@@ -46,7 +46,7 @@ set(groot, 'DefaultFigureRenderer', 'Painters');
 yref = 0.5;
 
 % Right-hand side function
-fun = @(t, x, u) -x + u;
+fun = @(t, x, u) -x.^3 + u;
 
 % Measurement function
 output = @(t, x, u) x;
