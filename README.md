@@ -3,7 +3,7 @@ This repository contains a minimal working example (MWE) of how to solve an opti
 
 The example system is
 
-dx/dt = -x + u,
+dx/dt = -x^3 + u,
 
 and the objective is to minimize
 
