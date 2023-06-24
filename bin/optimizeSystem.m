@@ -73,29 +73,6 @@ odeopts = odeset();
 % Open-loop simulation
 [T, X] = openLoopSimulation(ubar, x0, tspan, fun, odeopts);
 
-% % Initialize
-% T = [];
-% X = [];
-% 
-% % Initial states
-% xk = x0;
-% 
-% for k = 1:N
-%     % Manipulated input in current control interval
-%     uk = ubar(:, k);
-% 
-%     % Simulate
-%     [t, x] = ode45(fun, tspan([k, k+1]), xk, odeopts, ...
-%         uk);
-% 
-%     % Update initial states
-%     xk = x(end, :);
-% 
-%     % Store results
-%     T = [T; t]; %#ok
-%     X = [X; x]; %#ok
-% end
-
 % Create figure
 figure(1);
 
